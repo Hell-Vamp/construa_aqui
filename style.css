@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Saira:ital,wght@0,100..900;1,100..900&family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto Condensed';
+}
+
+body {
+    background: linear-gradient(85deg, #ffffff, #eeeeee);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: start;
+}
+
+body::-webkit-scrollbar {
+    background: #969696;
+    width: 4px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #A78748;
+    border-radius: 50px;
+}
+
+body::-moz-scrollbar {
+    background: #969696;
+    width: 4px;
+}
+
+body::-moz-scrollbar-thumb {
+    background: #A78748;
+    border-radius: 50px;
+}
+
+.banner {
+    width: 100%;
+    max-height: 1080px;
+    aspect-ratio: 16/9;
+    background: url('./images/banner.png') no-repeat #000000;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.banner h1 {
+    font-family: 'Saira';
+    color: #ffffff;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    width: 100%;
+    text-align: center;
+    font-size: 100px;
+    line-height: 100px;
+}
+
+.banner h2 {
+    font-family: 'Zalando Sans Expanded';
+    color: #ffffff;
+    font-weight: 400;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 10px;
+    letter-spacing: 5px;
+}
+
+.banner a {
+    font-family: 'Zalando Sans Expanded';
+    color: #A78748;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 10px;
+    letter-spacing: 5px;
+    display: inline-block;
+    padding: 0px 40px;
+    padding-bottom: 15px;
+    text-decoration: none;
+    border-bottom: 2px solid #A78748;
+    margin-top: 100px;
+    transition: all .5s;
+}
+
+.banner a:hover {
+    padding: 0px 50px;
+    padding-bottom: 15px;
+}
+
+main {
+    width: 100%;
+    max-width: 1920px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: start;
+}
+
+.sec1 {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: start;
+    gap: 60px;
+    margin-top: 100px;
+}
+
+.sec1 h1 {
+    font-family: 'Saira';
+    color: #A78748;
+    font-weight: 600;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    font-size: 70px;
+}
+
+.sec1 div {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    margin-top: 50px;
+}
+
+.sec1 img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.sec1 p {
+    max-width: 600px;
+    font-size: 25px;
+    font-weight: 500;
+    color: #141414;
+}
+
+.sec1 p font {
+    font-weight: 900;
+}
+
+.sec2 {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: start;
+    gap: 60px;
+    margin-top: 150px;
+}
+
+.sec2 h1 {
+    font-family: 'Saira';
+    color: #A78748;
+    font-weight: 600;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    font-size: 70px;
+}
+
+.sec2 p {
+    max-width: 1200px;
+    font-size: 25px;
+    font-weight: 500;
+    color: #141414;
+    text-align: center;
+}
+
+.sec2 p font {
+    font-weight: 900;
+}
+
+.sec3 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    margin-top: 150px;
+}
+
+.sec3 h1 {
+    font-family: 'Saira';
+    color: #A78748;
+    font-weight: 600;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    font-size: 70px;
+}
+
+.sec3 img {
+    width: 100%;
+    max-width: 400px;
+}
+
+footer {
+    width: 100%;
+    padding: 0px 40px;
+    margin: 30px 0px;
+    margin-top: 200px;
+    box-sizing: border-box;
+}
+
+footer div {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background: #A78748;
+}
+
+footer div h1 {
+    font-weight: 400;
+    font-family: 'Roboto Condensed';
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+}
+
+@media (max-width: 550px) {
+    .banner h1 {
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    .banner h2 {
+        font-size: 10px;
+        margin-top: 10px;
+    }
+
+    .banner a {
+        font-size: 10px;
+        padding: 0px 20px;
+        padding-bottom: 15px;
+        margin-top: 20px;
+    }
+
+    .banner a:hover {
+        padding: 0px 30px;
+        padding-bottom: 15px;
+    }
+
+    .sec1 h1 {
+        font-size: 60px;
+    }
+
+    .sec2 h1 {
+        font-size: 60px;
+    }
+
+    .sec3 h1 {
+        font-size: 60px;
+    }
+}
